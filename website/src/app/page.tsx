@@ -32,7 +32,9 @@ export default function HomePage() {
             <div className="flex items-center space-x-3">
               <Button variant="ghost" size="sm">
                 <Github className="w-4 h-4 mr-2" />
-                <Link href="https://github.com/turtle-key/Arcitect">GitHub</Link>
+                <Link href="https://github.com/turtle-key/Arcitect" target="_blank" rel="noopener noreferrer">
+                  GitHub
+                </Link>
               </Button>
               <Button
                 size="sm"
@@ -198,7 +200,9 @@ export default function HomePage() {
                 className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-purple-600 bg-transparent"
               >
                 <Github className="w-5 h-5 mr-2" />
-                <Link href="https://github.com/turtle-key/Arcitect">View Source Code</Link>
+                <Link href="https://github.com/turtle-key/Arcitect" target="_blank" rel="noopener noreferrer">
+                  View Source Code
+                </Link>
               </Button>
             </div>
 
