@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import { Palette, Zap, Eye, Download, Github, Sparkles, Brush, Monitor, ArrowRight, Star } from "lucide-react"
 import Link from "next/link"
+import InteractiveDemo from "@/components/interactive-demo"
 
 export default function HomePage() {
   return (
@@ -31,7 +32,7 @@ export default function HomePage() {
             <div className="flex items-center space-x-3">
               <Button variant="ghost" size="sm">
                 <Github className="w-4 h-4 mr-2" />
-                GitHub
+                <Link href="https://github.com/turtle-key/Arcitect">GitHub</Link>
               </Button>
               <Button
                 size="sm"
@@ -81,33 +82,9 @@ export default function HomePage() {
           <p className="text-sm text-gray-500">Compatible with Arc Browser • macOS 12.0+ • Free & Open Source</p>
         </div>
 
-        {/* Hero Image/Demo */}
+        {/* Interactive Demo */}
         <div className="mt-16 max-w-5xl mx-auto">
-          <div className="relative">
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 rounded-2xl p-8 shadow-2xl">
-              <div className="bg-white rounded-xl p-6 shadow-lg">
-                <div className="flex items-center space-x-2 mb-4">
-                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-                  <div className="ml-4 text-sm text-gray-500">Arcitect Theme Editor</div>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="space-y-4">
-                    <div className="h-4 bg-gradient-to-r from-purple-200 to-pink-200 rounded"></div>
-                    <div className="h-4 bg-gradient-to-r from-blue-200 to-cyan-200 rounded w-3/4"></div>
-                    <div className="h-4 bg-gradient-to-r from-green-200 to-emerald-200 rounded w-1/2"></div>
-                  </div>
-                  <div className="bg-gradient-to-br from-purple-100 to-pink-100 rounded-lg p-4 flex items-center justify-center">
-                    <Palette className="w-12 h-12 text-purple-600" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="absolute -top-4 -right-4 bg-gradient-to-r from-purple-600 to-pink-600 text-white px-3 py-1 rounded-full text-sm font-medium">
-              Live Preview
-            </div>
-          </div>
+          <InteractiveDemo />
         </div>
       </section>
 
@@ -221,7 +198,7 @@ export default function HomePage() {
                 className="text-lg px-8 py-3 border-white text-white hover:bg-white hover:text-purple-600 bg-transparent"
               >
                 <Github className="w-5 h-5 mr-2" />
-                View Source Code
+                <Link href="https://github.com/turtle-key/Arcitect">View Source Code</Link>
               </Button>
             </div>
 
@@ -278,7 +255,7 @@ export default function HomePage() {
               <h4 className="font-semibold mb-4">Community</h4>
               <ul className="space-y-2 text-gray-400">
                 <li>
-                  <Link href="#" className="hover:text-white transition-colors">
+                  <Link href="https://github.com/turtle-key/Arcitect" className="hover:text-white transition-colors">
                     GitHub
                   </Link>
                 </li>
